@@ -1,5 +1,4 @@
-//S2 EP2 : 
-// S2 EP2 - Fonction générique avec contrainte sur les tableaux non vides
+// S2 EP2 
 export function premierElement<T>(tableau: T[]): T | undefined {
     if (tableau.length === 0) {
         console.error("Erreur : le tableau ne peut pas être vide.");
