@@ -8,18 +8,7 @@ afficherPersonneAvancee(personne3);
 
 // EP3 
 
-import { PersonnePro, afficherInfoProfessionnelle } from "./personnePro.js";
-
-const employe1: PersonnePro = {
-    nom: "Alice",
-    poste: "Développeuse"
-};
-
-const client1: PersonnePro = {
-    nom: "Bob",
-    entreprise: "TechCorp"
-};
-
+import { afficherInfoProfessionnelle, client1, employe1  } from "./personnePro.js";
 
 afficherInfoProfessionnelle(employe1); // Employé: Alice travaille comme Développeuse.
 afficherInfoProfessionnelle(client1);
