@@ -19,3 +19,10 @@ export function vecteurDirection(direction: Direction): [number, number] {
             return [-1, 0];
     }
 }
+
+// EP3
+
+export function deplacer(point: [number, number], direction: Direction): [number, number] {
+    const [dx, dy] = vecteurDirection(direction);
+    return [point[0] + dx, point[1] + dy];
+}
