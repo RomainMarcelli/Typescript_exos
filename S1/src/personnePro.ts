@@ -23,3 +23,13 @@ export function afficherInfoProfessionnelle(personne: PersonnePro): void {
         console.log(`Client: ${personne.nom} est associé à l'entreprise ${personne.entreprise}.`);
     }
 }
+
+export const employe1: PersonnePro = {
+    nom: "Alice",
+    poste: "Développeuse"
+};
+
+export const client1: PersonnePro = {
+    nom: "Bob",
+    entreprise: "TechCorp"
+};

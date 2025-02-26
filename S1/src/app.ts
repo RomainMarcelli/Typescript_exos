@@ -10,8 +10,5 @@ afficherPersonneAvancee(personne3);
 
 import { afficherInfoProfessionnelle, client1, employe1  } from "./personnePro.js";
 
-;
-
-
 afficherInfoProfessionnelle(employe1); // Employé: Alice travaille comme Développeuse.
 afficherInfoProfessionnelle(client1);
