@@ -7,3 +7,8 @@ export function premierElement<T>(tableau: T[]): T | undefined {
     }
     return tableau[0];
 }
+
+export interface Produit {
+    nom: string;
+    prix: number;
+}

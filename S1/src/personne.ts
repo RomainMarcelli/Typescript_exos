@@ -49,4 +49,3 @@ export const personne3: Personne = {
     name: "Bob", 
     age: 30
 };
-

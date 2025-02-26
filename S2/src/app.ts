@@ -1,22 +1,25 @@
-import { premierElement } from "./generics(2).js";
+import { afficherPersonne, personne1, afficherPersonneAvancee, personne2, personne3} from "./personne.js";
 
-const nombres: number[] = [10, 20, 30];
-console.log("Premier élément (nombres) :", premierElement(nombres)); // Résultat : 10
+afficherPersonne(personne1);
 
-const mots: string[] = ["Alice", "Bob", "Charlie"];
-console.log("Premier élément (mots) :", premierElement(mots)); // Résultat : "Alice"
+// EP2 : 3. TEST
+afficherPersonneAvancee(personne2);
+afficherPersonneAvancee(personne3);
 
-interface Produit {
-    nom: string;
-    prix: number;
-}
+// EP3 
 
-const produits: Produit[] = [
-    { nom: "Ordinateur", prix: 1200 },
-    { nom: "Téléphone", prix: 800 }
-];
+import { PersonnePro, afficherInfoProfessionnelle } from "./personnePro.js";
 
-console.log("Premier élément (produits) :", premierElement(produits)); 
+const employe1: PersonnePro = {
+    nom: "Alice",
+    poste: "Développeuse"
+};
 
-const vide: string[] = [];
-console.log("Premier élément (vide) :", premierElement(vide)); // Affiche une erreur et retourne undefined
+const client1: PersonnePro = {
+    nom: "Bob",
+    entreprise: "TechCorp"
+};
+
+
+afficherInfoProfessionnelle(employe1); // Employé: Alice travaille comme Développeuse.
+afficherInfoProfessionnelle(client1);
