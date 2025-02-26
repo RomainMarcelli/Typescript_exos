@@ -40,3 +40,17 @@ console.log("Premier élément (produits) :", premierElement(produits));
 // 4 - Test avec un tableau vide
 console.log("Premier élément (vide) :", premierElement(vide)); 
 // Résultat attendu : "Erreur : le tableau ne peut pas être vide." + undefined
+
+
+// EP3
+import { getProperty, Voiture, maVoiture } from "./generics.js";
+const marque = getProperty(maVoiture, "marque");
+console.log("Marque de la voiture :", marque); 
+
+// 2 - Test avec la clé "annee"
+const annee = getProperty(maVoiture, "annee");
+console.log("Année de la voiture :", annee); 
+
+// const couleur = getProperty(maVoiture, "couleur"); 
+// console.log("Couleur de la voiture :", couleur); 
+
