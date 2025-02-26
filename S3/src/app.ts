@@ -18,3 +18,16 @@ const monCercle = new Cercle(8);
 
 afficherSurface(monRectangle); 
 afficherSurface(monCercle); 
+
+
+// EP3
+
+import { afficherVehicule } from "./vehicule.js";
+
+const voitureValide = { marque: "BMW", annee: 2022 };
+
+const objetInvalide = { marque: "Tesla", annee: "2021" }; 
+
+afficherVehicule(voitureValide); 
+afficherVehicule(objetInvalide); 
+afficherVehicule("pas un objet"); 
