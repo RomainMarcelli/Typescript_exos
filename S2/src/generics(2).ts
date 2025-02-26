@@ -15,6 +15,7 @@ export interface Produit {
     nom: string;
     prix: number;
 }
+d .
 
 export const produits: Produit[] = [
     { nom: "Ordinateur", prix: 1200 },
